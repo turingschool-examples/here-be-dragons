@@ -31,6 +31,9 @@ class NytimesTest < Minitest::Test
   def test_it_can_get_all_stories_with_subsection_of_politics
     #Set your code to the local variable, "result"
 
+    result = @hash[:results].select do |element|
+      element[:subsection] == "Politics"
+    end
 
     assert result.is_a? (Array)
     assert_equal 6, result.count
