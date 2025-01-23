@@ -2,6 +2,7 @@
 
 ## Setup
 1. Fork and clone
+2. Run `gem install awesome_print`
 2. run rspec to confirm you have 1 passing test, and 3 pending tests
 
 ## Directions
